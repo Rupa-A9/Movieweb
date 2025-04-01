@@ -1,0 +1,24 @@
+{
+    "name": "movie-app",
+    "version": "1.0.0",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "axios": "^0.21.4",
+        "bcryptjs": "^3.0.2",
+        "dotenv": "^10.0.0",
+        "express": "^4.21.2",
+        "express-ejs-layouts": "^2.5.0",
+        "express-session": "^1.18.1",
+        "firebase-admin": "^13.2.0",
+        "node-fetch": "^2.6.1",
+        "node-telegram-bot-api": "^0.50.0"
+    },
+    "author": "",
+    "license": "ISC",
+    "type": "module",
+    "keywords": [],
+    "description": ""
+}

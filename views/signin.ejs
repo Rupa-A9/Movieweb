@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #1c92d2, #f2fcfe);
+            text-align: center;
+            padding: 50px;
+            color: white;
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+            width: 40%;
+        }
+        label, input {
+            display: block;
+            width: 100%;
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        input {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #673ab7;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            margin-top: 15px;
+            cursor: pointer;
+            font-size: 1.2em;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: #512da8;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sign In</h1>
+    <div class="container">
+        <form action="/signin" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" name="password" required>
+            <button type="submit">Sign In</button>
+        </form>
+        <a href="/signup">Don't have an account? Sign Up</a>
+    </div>
+</body>
+</html>

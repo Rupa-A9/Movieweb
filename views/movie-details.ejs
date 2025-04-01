@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            text-align: center;
+            padding: 30px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .movie-details {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            width: 80%;
+            margin: 20px auto;
+        }
+        .movie-details img {
+            max-width: 300px;
+            margin: 20px 0;
+        }
+        .movie-details p {
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+        .movie-details .rating {
+            font-weight: bold;
+            color: #ff4081;
+        }
+    </style>
+</head>
+<body>
+    <h1><%= title %> (<%= year %>)</h1>
+    <div class="movie-details">
+        <img src="<%= poster %>" alt="<%= title %> Poster">
+        <p><strong>Director:</strong> <%= director %></p>
+        <p><strong>Actors:</strong> <%= actors %></p>
+        <p><strong>Genre:</strong> <%= genre %></p>
+        <p><strong>Plot:</strong> <%= plot %></p>
+        <p class="rating"><strong>IMDB Rating:</strong> <%= imdbRating %> (<%= imdbVotes %> votes)</p>
+    </div>
+    <a href="/">Go Back</a>
+</body>
+</html>
