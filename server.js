@@ -172,5 +172,5 @@ app.post('/search-movie', async (req, res) => {
 
 // Start Server
 app.listen(port, () => {
-    console.log(`Server is running on http://localhost:${port}`);
+    console.log(`server is running on http://localhost:${port}`);
 });
